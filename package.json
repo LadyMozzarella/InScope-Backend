@@ -1,0 +1,22 @@
+{
+  "name": "inscope-backend",
+  "version": "1.0.0",
+  "description": "API for InScope",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/InScopeTracker/InScope-Backend.git"
+  },
+  "author": "",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/InScopeTracker/InScope-Backend/issues"
+  },
+  "homepage": "https://github.com/InScopeTracker/InScope-Backend#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
