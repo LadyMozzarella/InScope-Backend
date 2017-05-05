@@ -15,12 +15,19 @@ on your machine to properly run the application.
 
 1. Create database in PostgreSQL for the project.
 2. Update database configurations in `config/config.json` under "development".
+3. Run:
+```
+# Install dependencies
+$ npm install
+
+# Run migrations
+$ node_modules/.bin/sequelize db:migrate
+```
 
 ### Run Application
 
 Run:
 ```bash
-$ npm install
 $ ./bin/www
 ```
 
