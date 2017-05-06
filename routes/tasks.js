@@ -1,9 +1,12 @@
 var express = require('express');
 var router = express.Router();
+var models  = require('../models');
 
-/* GET users listing. */
+/* GET tasks */
 router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+  models.Task.findAll().then(function(tasks) {
+    res.send(tasks);
+  });
 });
 
 module.exports = router;

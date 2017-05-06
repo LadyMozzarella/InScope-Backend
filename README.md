@@ -22,13 +22,16 @@ $ npm install
 
 # Run migrations
 $ node_modules/.bin/sequelize db:migrate
+
+# Add seeds
+$ node_modules/.bin/sequelize db:seed:all
 ```
 
 ### Run Application
 
 Run:
 ```bash
-$ ./bin/www
+$ npm start
 ```
 
 Visit http://localhost:3000/ to see "Welcome to Express" page.
