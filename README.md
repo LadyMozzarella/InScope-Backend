@@ -34,4 +34,4 @@ Run:
 $ npm start
 ```
 
-Visit http://localhost:3000/ to see "Welcome to Express" page.
+Visit http://localhost:3000/ to see "Welcome to the InScope Backend Application" message.

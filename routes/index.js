@@ -2,14 +2,14 @@ const express = require('express');
 
 const router = express.Router();
 
-/* GET home page. */
+/* GET home page */
 router.get('/', (req, res) => {
-  res.render('index', { title: 'Express' });
+  res.send('Welcome to the InScope Backend Application');
 });
 
 // We don't have a favicon
 router.get('/favicon.ico', (req, res) => {
-  res.sendStatus(204);
+  res.status(204).send('No Content');
 });
 
 module.exports = router;
