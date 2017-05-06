@@ -1,10 +1,11 @@
-var express = require('express');
-var router = express.Router();
-var models  = require('../models');
+const express = require('express');
+const models = require('../models');
+
+const router = express.Router();
 
 /* GET tasks */
-router.get('/', function(req, res, next) {
-  models.Task.findAll().then(function(tasks) {
+router.get('/', (req, res) => {
+  models.Task.findAll().then((tasks) => {
     res.send(tasks);
   });
 });

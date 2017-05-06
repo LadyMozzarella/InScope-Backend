@@ -1,27 +1,26 @@
-'use strict';
 module.exports = {
-  up: function(queryInterface, Sequelize) {
+  up(queryInterface, Sequelize) {
     return queryInterface.createTable('ProjectUsers', {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
       },
       admin: {
-        type: Sequelize.BOOLEAN
+        type: Sequelize.BOOLEAN,
       },
       createdAt: {
         allowNull: false,
-        type: Sequelize.DATE
+        type: Sequelize.DATE,
       },
       updatedAt: {
         allowNull: false,
-        type: Sequelize.DATE
-      }
+        type: Sequelize.DATE,
+      },
     });
   },
-  down: function(queryInterface, Sequelize) {
+  down(queryInterface) {
     return queryInterface.dropTable('ProjectUsers');
-  }
+  },
 };
