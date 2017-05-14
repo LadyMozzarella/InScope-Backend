@@ -35,3 +35,12 @@ $ npm start
 ```
 
 Visit http://localhost:3000/ to see "Welcome to the InScope Backend Application" message.
+
+## Testing
+
+Mocha is the test framework used in testing this application and Chai is the assertion library used.
+
+Run:
+```bash
+$ npm test
+```

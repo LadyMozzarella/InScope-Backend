@@ -3,5 +3,9 @@
   "plugins": [
     "import"
   ],
-  "require-parems": "always"
+  "require-parems": "always",
+  "env": {
+    "node": true,
+    "mocha": true
+  }
 }
